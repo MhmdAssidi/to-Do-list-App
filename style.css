@@ -59,3 +59,70 @@
             width: 80%;
     }
 }
+
+.taskInfo{
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    right: 14%;
+    position: fixed;
+    width: 72%;
+    z-index: 1000;
+}
+.taskInfo .taskInfoContainer{
+
+    box-shadow: 10px 100px 150px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #DDA853;
+    position: relative;
+    line-height: 1.8;
+     
+}
+.taskInfo .taskInfoContainer i{
+    position: absolute;
+    left: 90%;
+}
+.taskInfo .taskInfoContainer button{
+    background-color: #F5EEDC;
+    font-size: 25px;
+    margin-top: 30px;
+    color: #000000;
+    padding: 14px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.taskInfo .taskInfoContainer button:active{
+    background-color: #DDA853;
+
+}
+
+.taskInfo .taskInfoContainer .form-control{
+  width: 70%;
+  font-size: 20px;
+  border: none;
+  padding:10px;
+  outline: none;
+
+}
+.taskInfo .taskInfoContainer .form-select{
+    width: 40%;
+    font-size: 15px;
+    padding:5px;
+
+}
+.fa-close{
+    cursor: pointer;
+}
+@media screen and (max-width:850px) {
+    
+    .taskInfo{
+        right: 5%;
+        width: 90%;
+        max-width: none;
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List App</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./style.css">
 
@@ -13,13 +13,56 @@
     <div class="container" id="bigContainer">
         <div class="action toDo">
             <p>TO DO</p>
-            <button class="addTask" id="addTask"><i class="fa fa-plus" style="font-size:20px"></i> Add task</button>
+            <button class="addTask" id="addTask"><i class="fa fa-plus"></i> Add task</button>
           
         </div>
 
     </div>
 
-    
+    <section class="taskInfo" id="taskInfo">
+        
+        <div class="taskInfoContainer">
+            <i class="fa fa-close" id="exit"></i>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Task Title:</label>
+            <input type="text" class="form-control" id="TaskName">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Due Date:</label>
+            <input type="date" class="form-control" id="DateTask">
+          </div>
+
+          <div class="mb-3">
+            
+            <label for="exampleFormControlInput1" class="form-label">Status:</label>
+
+            <select id="prioritySelect" class="form-select" aria-label="Disabled select example">
+                <option selected>Choose Status</option>
+                <option value="Low">ToDo</option>
+                <option value="Medium">Pending</option>
+                <option value="High">Completed</option>
+              </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Priority:</label>
+            
+            <select id="prioritySelect" class="form-select" aria-label="Disabled select example">
+                <option selected>Choose Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+          </div>
+
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary" id="addTaskBtn">Add Task</button>
+          </div>
+
+          </div>
+
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>

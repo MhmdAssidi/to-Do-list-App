@@ -1,0 +1,61 @@
+.body{
+    background-color: #F7EFE5; 
+   font-family: "poppins";
+}
+
+.container{
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+ 
+}
+.container .action{
+   background-color: #F5EEDC;
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+    
+}
+.container div p{
+   color: #27548A;
+   font-size: 40px;
+   font-weight: 700;
+  
+}
+.container .addTask{
+   color: #183B4E;
+   background-color: #DDA853;
+   border: none;
+   border-radius: 5%;
+   text-align: center;
+   width: 70%;
+   font-family: Poppins;
+   font-size: 35px;
+  font-weight: 700;
+  cursor: pointer;
+  padding:20px;
+  box-shadow: 2px 20px 5px rgba(0, 0, 0, 0.3); 
+
+}
+
+.container .addTask:active{
+   transform: scale(0.9);
+}
+    
+    @media screen and (max-width:850px) {
+       .container{
+        width: 100%;
+       }
+.container .action{
+  width: 80%;    
+       }
+    .container .action p{
+        font-size: 45px;
+    }
+    .container .addTask{
+            font-size: 35px;
+            width: 80%;
+    }
+}

@@ -61,8 +61,7 @@
 }
 
 .taskInfo{
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     top: 5%;
@@ -70,6 +69,7 @@
     position: fixed;
     width: 72%;
     z-index: 1000;
+    display: none;
 }
 .taskInfo .taskInfoContainer{
 
@@ -79,7 +79,7 @@
     font-weight: 600;
     background-color: #DDA853;
     position: relative;
-    line-height: 1.8;
+    line-height: 2.8;
      
 }
 .taskInfo .taskInfoContainer i{
@@ -92,7 +92,7 @@
     margin-top: 30px;
     color: #000000;
     padding: 14px;
-    width: 50%;
+    width: 35%;
     cursor: pointer;
 }
 
@@ -118,11 +118,49 @@
 .fa-close{
     cursor: pointer;
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width:860px) {
     
     .taskInfo{
         right: 5%;
         width: 90%;
         max-width: none;
     }
+    .taskInfo .taskInfoContainer .form-control {
+        width: 50%;
+    }
+.taskInfo .taskInfoContainer button{
+    font-size: 18px;
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width:650px) {
+    .taskInfo .taskInfoContainer{
+        line-height: 5.5;
+    }
+    .taskInfo .taskInfoContainer .form-select {
+        width: 60%;
+        font-size: 24px;
+        padding: 8px;
+    }
+    .taskInfo .taskInfoContainer button{
+       width: 70%;
+    }
+}
+.removeBtn{
+    border-radius: 50%;
+    background-color: rgb(144, 34, 34);
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.removeBtnAndlistDiv{
+    font-size: 40px;
+    font-weight: 600;
+    background-color: rgba(176, 173, 173, 0.3);
+    color: #DDA853;
+}
+.removeBtnAndlistDiv ul{
+    line-height: 2;
 }

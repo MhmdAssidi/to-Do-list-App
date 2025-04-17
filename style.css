@@ -136,7 +136,7 @@
 
 @media screen and (max-width:650px) {
     .taskInfo .taskInfoContainer{
-        line-height: 5.5;
+        line-height: 4.5;
     }
     .taskInfo .taskInfoContainer .form-select {
         width: 60%;

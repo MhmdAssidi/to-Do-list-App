@@ -140,8 +140,8 @@
     }
     .taskInfo .taskInfoContainer .form-select {
         width: 60%;
-        font-size: 24px;
-        padding: 8px;
+        font-size: 15px;
+        padding: 5px;
     }
     .taskInfo .taskInfoContainer button{
        width: 70%;
